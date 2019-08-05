@@ -148,36 +148,38 @@ def print_perf_eval(predictions):
     evaluator = BinaryClassificationEvaluator(labelCol = 'output')
     print_to_output_file("Test Area Under ROC: " + str(evaluator.evaluate(predictions, {evaluator.metricName: "areaUnderROC"})))
     
-def run_logistic_regression(tn_data):
-    lr = LogisticRegression(maxIter=10, featuresCol="scaled_features", labelCol="output", 
-                            weightCol="classWeights", predictionCol="prediction")
+def run_logistic_regression(tn_data, ts_data):
+    lr = LogisticRegression(elasticNetParam=0.5, regParam=0.01, featuresCol="scaled_features", labelCol="output", weightCol="classWeights", predictionCol="prediction")
     # Fit the model
     lrModel = lr.fit(tn_data)
 
     predict_train=lrModel.transform(tn_data)
-    #predict_test=lrModel.transform(ts_data)
+    predict_test=lrModel.transform(ts_data)
     
-    trainingSummary = lrModel.summary
+    evaluator = BinaryClassificationEvaluator(rawPredictionCol = 'rawPrediction', labelCol = 'output')
+
+    print_to_output_file("The area under ROC for train set is " + str(evaluator.evaluate(predict_train)))
+    print_to_output_file("The area under ROC for test set is " + str(evaluator.evaluate(predict_test)))
     
+    trainingSummary = lrModel.summary    
     print_perf_summary(trainingSummary)
     
 def run_random_forest_algorithm(tn_data, ts_data):
-    rf = RandomForestClassifier(numTrees=10, featuresCol="scaled_features", labelCol="output", predictionCol="prediction")
+    rf = RandomForestClassifier(featuresCol="scaled_features", labelCol="output", predictionCol="prediction")
     rfModel = rf.fit(tn_data)
     predictions = rfModel.transform(ts_data)
     
     print_perf_eval(predictions)
     
 def run_gradient_boost(tn_data, ts_data):
-    gbt = GBTClassifier(maxIter=10, featuresCol="scaled_features", labelCol="output", predictionCol="prediction")
+    gbt = GBTClassifier(featuresCol="scaled_features", labelCol="output", predictionCol="prediction")
     gbtModel = gbt.fit(tn_data)
     predictions = gbtModel.transform(ts_data)
     
     print_perf_eval(predictions)
     
 def run_lsvc(tn_data, ts_data):
-    sv = LinearSVC(maxIter=10, regParam=0.1,
-                     featuresCol="scaled_features", labelCol="output", predictionCol="prediction")
+    sv = LinearSVC(regParam=0.01,featuresCol="scaled_features", labelCol="output", predictionCol="prediction")
     svModel = sv.fit(tn_data)
     predictions = svModel.transform(ts_data)
     
@@ -190,7 +192,7 @@ t0 = time.time()
 
 df_tn = assemble_all_dfs()
 t1 = time.time()
-print_to_output_file('Runtime - assemble all' + str(float(t1 - t0)))
+print_to_output_file('Runtime - assemble all - ' + str(float(t1 - t0)))
 
 
 t0 = time.time()
@@ -198,7 +200,7 @@ t0 = time.time()
 df_tn = run_standard_scaler(df_tn)
 
 t1 = time.time()
-print_to_output_file('Runtime - standard scaler' + str(float(t1 - t0)))
+print_to_output_file('Runtime - standard scaler - ' + str(float(t1 - t0)))
 
 
 #t0 = time.time()
@@ -213,7 +215,7 @@ t0 = time.time()
 train, test = train_test_split(df_tn)
 
 t1 = time.time()
-print_to_output_file('Runtime - test train split' + str(float(t1 - t0)))
+print_to_output_file('Runtime - test train split - ' + str(float(t1 - t0)))
 
 
 t0 = time.time()
@@ -221,15 +223,15 @@ t0 = time.time()
 train = get_balance_weight_ratio_data(train)
 
 t1 = time.time()
-print_to_output_file('Runtime - get balanced train data' + str(float(t1 - t0)))
+print_to_output_file('Runtime - get balanced train data - ' + str(float(t1 - t0)))
 
 
 t0 = time.time()
 
-run_logistic_regression(train)
+run_logistic_regression(train, test)
 
 t1 = time.time()
-print_to_output_file('Runtime - lr' + str(float(t1 - t0)))
+print_to_output_file('Runtime - lr - ' + str(float(t1 - t0)))
 
 
 t0 = time.time()
@@ -237,7 +239,7 @@ t0 = time.time()
 run_random_forest_algorithm(train, test)
 
 t1 = time.time()
-print_to_output_file('Runtime - rf' + str(float(t1 - t0)))
+print_to_output_file('Runtime - rf - ' + str(float(t1 - t0)))
 
 
 t0 = time.time()
@@ -245,7 +247,7 @@ t0 = time.time()
 run_gradient_boost(train, test)
 
 t1 = time.time()
-print_to_output_file('Runtime - gb' + str(float(t1 - t0)))
+print_to_output_file('Runtime - gb - ' + str(float(t1 - t0)))
 
 
 t0 = time.time()
@@ -253,4 +255,4 @@ t0 = time.time()
 run_lsvc(train, test)
 
 t1 = time.time()
-print_to_output_file('Runtime - lsvc' + str(float(t1 - t0)))
+print_to_output_file('Runtime - lsvc - ' + str(float(t1 - t0)))
