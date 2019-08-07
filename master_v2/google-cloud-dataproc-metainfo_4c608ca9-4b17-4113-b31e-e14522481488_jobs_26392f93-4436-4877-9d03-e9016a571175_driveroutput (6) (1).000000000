@@ -1,0 +1,288 @@
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+com.databricks#spark-xml_2.11 added as a dependency
+graphframes#graphframes added as a dependency
+com.databricks#spark-avro_2.11 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-ea2e01b0-19c6-46bb-865e-eb16002c18d4;1.0
+	confs: [default]
+	found com.databricks#spark-xml_2.11;0.4.1 in central
+	found graphframes#graphframes;0.5.0-spark2.1-s_2.11 in spark-packages
+	found com.typesafe.scala-logging#scala-logging-api_2.11;2.1.2 in central
+	found com.typesafe.scala-logging#scala-logging-slf4j_2.11;2.1.2 in central
+	found org.scala-lang#scala-reflect;2.11.0 in central
+	found org.slf4j#slf4j-api;1.7.7 in central
+	found com.databricks#spark-avro_2.11;4.0.0 in central
+	found org.apache.avro#avro;1.7.6 in central
+	found org.codehaus.jackson#jackson-core-asl;1.9.13 in central
+	found org.codehaus.jackson#jackson-mapper-asl;1.9.13 in central
+	found com.thoughtworks.paranamer#paranamer;2.3 in central
+	found org.xerial.snappy#snappy-java;1.0.5 in central
+	found org.apache.commons#commons-compress;1.4.1 in central
+	found org.tukaani#xz;1.0 in central
+downloading https://repo1.maven.org/maven2/com/databricks/spark-xml_2.11/0.4.1/spark-xml_2.11-0.4.1.jar ...
+	[SUCCESSFUL ] com.databricks#spark-xml_2.11;0.4.1!spark-xml_2.11.jar (33ms)
+downloading http://dl.bintray.com/spark-packages/maven/graphframes/graphframes/0.5.0-spark2.1-s_2.11/graphframes-0.5.0-spark2.1-s_2.11.jar ...
+	[SUCCESSFUL ] graphframes#graphframes;0.5.0-spark2.1-s_2.11!graphframes.jar (547ms)
+downloading https://repo1.maven.org/maven2/com/databricks/spark-avro_2.11/4.0.0/spark-avro_2.11-4.0.0.jar ...
+	[SUCCESSFUL ] com.databricks#spark-avro_2.11;4.0.0!spark-avro_2.11.jar (13ms)
+downloading https://repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging-api_2.11/2.1.2/scala-logging-api_2.11-2.1.2.jar ...
+	[SUCCESSFUL ] com.typesafe.scala-logging#scala-logging-api_2.11;2.1.2!scala-logging-api_2.11.jar (12ms)
+downloading https://repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging-slf4j_2.11/2.1.2/scala-logging-slf4j_2.11-2.1.2.jar ...
+	[SUCCESSFUL ] com.typesafe.scala-logging#scala-logging-slf4j_2.11;2.1.2!scala-logging-slf4j_2.11.jar (12ms)
+downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.0/scala-reflect-2.11.0.jar ...
+	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.11.0!scala-reflect.jar (54ms)
+downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar ...
+	[SUCCESSFUL ] org.slf4j#slf4j-api;1.7.7!slf4j-api.jar (12ms)
+downloading https://repo1.maven.org/maven2/org/apache/avro/avro/1.7.6/avro-1.7.6.jar ...
+	[SUCCESSFUL ] org.apache.avro#avro;1.7.6!avro.jar(bundle) (13ms)
+downloading https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar ...
+	[SUCCESSFUL ] org.codehaus.jackson#jackson-core-asl;1.9.13!jackson-core-asl.jar (13ms)
+downloading https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar ...
+	[SUCCESSFUL ] org.codehaus.jackson#jackson-mapper-asl;1.9.13!jackson-mapper-asl.jar (14ms)
+downloading https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.3/paranamer-2.3.jar ...
+	[SUCCESSFUL ] com.thoughtworks.paranamer#paranamer;2.3!paranamer.jar (12ms)
+downloading https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.jar ...
+	[SUCCESSFUL ] org.xerial.snappy#snappy-java;1.0.5!snappy-java.jar(bundle) (15ms)
+downloading https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar ...
+	[SUCCESSFUL ] org.apache.commons#commons-compress;1.4.1!commons-compress.jar (12ms)
+downloading https://repo1.maven.org/maven2/org/tukaani/xz/1.0/xz-1.0.jar ...
+	[SUCCESSFUL ] org.tukaani#xz;1.0!xz.jar (12ms)
+:: resolution report :: resolve 3523ms :: artifacts dl 788ms
+	:: modules in use:
+	com.databricks#spark-avro_2.11;4.0.0 from central in [default]
+	com.databricks#spark-xml_2.11;0.4.1 from central in [default]
+	com.thoughtworks.paranamer#paranamer;2.3 from central in [default]
+	com.typesafe.scala-logging#scala-logging-api_2.11;2.1.2 from central in [default]
+	com.typesafe.scala-logging#scala-logging-slf4j_2.11;2.1.2 from central in [default]
+	graphframes#graphframes;0.5.0-spark2.1-s_2.11 from spark-packages in [default]
+	org.apache.avro#avro;1.7.6 from central in [default]
+	org.apache.commons#commons-compress;1.4.1 from central in [default]
+	org.codehaus.jackson#jackson-core-asl;1.9.13 from central in [default]
+	org.codehaus.jackson#jackson-mapper-asl;1.9.13 from central in [default]
+	org.scala-lang#scala-reflect;2.11.0 from central in [default]
+	org.slf4j#slf4j-api;1.7.7 from central in [default]
+	org.tukaani#xz;1.0 from central in [default]
+	org.xerial.snappy#snappy-java;1.0.5 from central in [default]
+	:: evicted modules:
+	org.slf4j#slf4j-api;1.7.5 by [org.slf4j#slf4j-api;1.7.7] in [default]
+	org.slf4j#slf4j-api;1.6.4 by [org.slf4j#slf4j-api;1.7.7] in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   16  |   14  |   14  |   2   ||   14  |   14  |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-ea2e01b0-19c6-46bb-865e-eb16002c18d4
+	confs: [default]
+	14 artifacts copied, 0 already retrieved (7998kB/20ms)
+19/08/04 20:19:48 INFO org.spark_project.jetty.util.log: Logging initialized @8358ms
+19/08/04 20:19:48 INFO org.spark_project.jetty.server.Server: jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+19/08/04 20:19:48 INFO org.spark_project.jetty.server.Server: Started @8456ms
+19/08/04 20:19:48 INFO org.spark_project.jetty.server.AbstractConnector: Started ServerConnector@6313eb72{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+19/08/04 20:19:48 WARN org.apache.spark.scheduler.FairSchedulableBuilder: Fair Scheduler configuration file not found so jobs will be scheduled in FIFO order. To use fair scheduling, configure pools in fairscheduler.xml or set spark.scheduler.allocation.file to a file that contains the configuration.
+19/08/04 20:19:49 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at clsrishi-m/10.128.0.49:8032
+19/08/04 20:19:49 INFO org.apache.hadoop.yarn.client.AHSProxy: Connecting to Application History server at clsrishi-m/10.128.0.49:10200
+19/08/04 20:19:52 WARN org.apache.spark.deploy.yarn.Client: Same path resource file:///root/.ivy2/jars/com.databricks_spark-xml_2.11-0.4.1.jar added multiple times to distributed cache.
+19/08/04 20:19:52 WARN org.apache.spark.deploy.yarn.Client: Same path resource file:///root/.ivy2/jars/graphframes_graphframes-0.5.0-spark2.1-s_2.11.jar added multiple times to distributed cache.
+19/08/04 20:19:52 WARN org.apache.spark.deploy.yarn.Client: Same path resource file:///root/.ivy2/jars/com.databricks_spark-avro_2.11-4.0.0.jar added multiple times to distributed cache.
+19/08/04 20:19:52 WARN org.apache.spark.deploy.yarn.Client: Same path resource file:///root/.ivy2/jars/com.typesafe.scala-logging_scala-logging-api_2.11-2.1.2.jar added multiple times to distributed cache.
+19/08/04 20:19:52 WARN org.apache.spark.deploy.yarn.Client: Same path resource file:///root/.ivy2/jars/com.typesafe.scala-logging_scala-logging-slf4j_2.11-2.1.2.jar added multiple times to distributed cache.
+19/08/04 20:19:52 WARN org.apache.spark.deploy.yarn.Client: Same path resource file:///root/.ivy2/jars/org.scala-lang_scala-reflect-2.11.0.jar added multiple times to distributed cache.
+19/08/04 20:19:52 WARN org.apache.spark.deploy.yarn.Client: Same path resource file:///root/.ivy2/jars/org.slf4j_slf4j-api-1.7.7.jar added multiple times to distributed cache.
+19/08/04 20:19:52 WARN org.apache.spark.deploy.yarn.Client: Same path resource file:///root/.ivy2/jars/org.apache.avro_avro-1.7.6.jar added multiple times to distributed cache.
+19/08/04 20:19:52 WARN org.apache.spark.deploy.yarn.Client: Same path resource file:///root/.ivy2/jars/org.codehaus.jackson_jackson-core-asl-1.9.13.jar added multiple times to distributed cache.
+19/08/04 20:19:52 WARN org.apache.spark.deploy.yarn.Client: Same path resource file:///root/.ivy2/jars/org.codehaus.jackson_jackson-mapper-asl-1.9.13.jar added multiple times to distributed cache.
+19/08/04 20:19:52 WARN org.apache.spark.deploy.yarn.Client: Same path resource file:///root/.ivy2/jars/com.thoughtworks.paranamer_paranamer-2.3.jar added multiple times to distributed cache.
+19/08/04 20:19:52 WARN org.apache.spark.deploy.yarn.Client: Same path resource file:///root/.ivy2/jars/org.xerial.snappy_snappy-java-1.0.5.jar added multiple times to distributed cache.
+19/08/04 20:19:52 WARN org.apache.spark.deploy.yarn.Client: Same path resource file:///root/.ivy2/jars/org.apache.commons_commons-compress-1.4.1.jar added multiple times to distributed cache.
+19/08/04 20:19:52 WARN org.apache.spark.deploy.yarn.Client: Same path resource file:///root/.ivy2/jars/org.tukaani_xz-1.0.jar added multiple times to distributed cache.
+19/08/04 20:19:53 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl: Submitted application application_1564949795625_0001
+Test write---------->
+Runtime - assemble all - 291.4020321369171
+19/08/04 20:24:52 WARN org.apache.spark.util.Utils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.debug.maxToStringFields' in SparkEnv.conf.
+Runtime - standard scaler - 1109.9922156333923
+Training Dataset Count: 32195163
+Test Dataset Count: 13799653
+Runtime - test train split - 2227.455965280533
+Runtime - get balanced train data - 2327.244553089142
+19/08/04 22:18:01 INFO com.github.fommil.jni.JniLoader: successfully loaded /tmp/jniloader8446407975192790022netlib-native_system-linux-x86_64.so
+19/08/04 22:18:08 INFO breeze.optimize.OWLQN: Step Size: 0.5918
+19/08/04 22:18:08 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.690241 (rel: 0.00419) 0.0583086
+19/08/04 22:18:11 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:18:11 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.684607 (rel: 0.00816) 0.0158225
+19/08/04 22:18:13 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:18:13 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.684095 (rel: 0.000748) 0.00747892
+19/08/04 22:18:16 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:18:16 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683874 (rel: 0.000324) 0.00957124
+19/08/04 22:18:19 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:18:19 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683791 (rel: 0.000120) 0.00460935
+19/08/04 22:18:21 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:18:21 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683733 (rel: 8.47e-05) 0.00760857
+19/08/04 22:18:29 INFO breeze.optimize.OWLQN: Step Size: 0.2500
+19/08/04 22:18:29 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683709 (rel: 3.65e-05) 0.00244850
+19/08/04 22:18:31 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:18:31 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683704 (rel: 7.18e-06) 0.00274394
+19/08/04 22:18:34 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:18:34 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683702 (rel: 2.93e-06) 0.00321175
+19/08/04 22:18:39 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/04 22:18:39 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683698 (rel: 5.56e-06) 0.00283062
+19/08/04 22:18:44 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/04 22:18:44 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683695 (rel: 4.04e-06) 0.00202020
+19/08/04 22:18:49 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/04 22:18:49 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683693 (rel: 2.30e-06) 0.00178544
+19/08/04 22:18:54 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/04 22:18:54 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683693 (rel: 7.65e-07) 0.00165244
+19/08/04 22:18:59 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/04 22:18:59 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683692 (rel: 1.92e-06) 0.00104794
+19/08/04 22:19:01 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:19:01 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683691 (rel: 4.45e-07) 0.00104026
+19/08/04 22:19:04 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:19:04 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683691 (rel: 6.28e-07) 0.000650688
+19/08/04 22:19:06 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:19:06 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683691 (rel: 3.10e-07) 0.000584921
+19/08/04 22:19:09 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:19:09 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683691 (rel: 1.95e-07) 0.000320381
+19/08/04 22:19:11 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:19:11 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683691 (rel: 1.13e-07) 0.000294057
+19/08/04 22:19:14 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:19:14 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683690 (rel: 1.06e-07) 0.000146234
+19/08/04 22:19:17 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:19:17 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683690 (rel: 5.69e-08) 8.84505e-05
+19/08/04 22:19:19 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:19:19 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683690 (rel: 8.50e-09) 9.38791e-05
+19/08/04 22:19:22 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:19:22 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683690 (rel: 2.61e-09) 0.000112390
+19/08/04 22:19:24 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:19:24 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683690 (rel: 6.24e-09) 5.94454e-05
+19/08/04 22:19:27 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:19:27 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683690 (rel: 1.80e-09) 5.31846e-05
+19/08/04 22:19:29 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:19:29 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683690 (rel: 1.18e-09) 3.15774e-05
+19/08/04 22:19:32 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:19:32 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683690 (rel: 4.97e-10) 2.82446e-05
+19/08/04 22:19:34 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:19:34 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683690 (rel: 3.32e-10) 1.87186e-05
+19/08/04 22:19:37 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:19:37 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683690 (rel: 2.34e-10) 1.54364e-05
+19/08/04 22:19:39 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:19:39 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683690 (rel: 1.59e-10) 1.10457e-05
+19/08/04 22:19:42 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:19:42 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683690 (rel: 1.73e-10) 8.32584e-06
+19/08/04 22:19:44 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:19:44 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683690 (rel: 2.25e-10) 4.35957e-06
+19/08/04 22:19:52 INFO breeze.optimize.OWLQN: Step Size: 0.2500
+19/08/04 22:19:52 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683690 (rel: 1.48e-11) 2.10487e-06
+19/08/04 22:19:54 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:19:54 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683690 (rel: 3.04e-12) 1.56119e-06
+19/08/04 22:19:57 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:19:57 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683690 (rel: 2.15e-12) 1.01930e-06
+19/08/04 22:19:59 INFO breeze.optimize.OWLQN: Step Size: 1.000
+19/08/04 22:19:59 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.683690 (rel: 1.73e-12) 6.65371e-07
+19/08/04 22:19:59 INFO breeze.optimize.OWLQN: Converged because gradient converged
+The area under ROC for train set is 0.5857525280951904
+The area under ROC for test set is 0.586126037418243
+Training set areaUnderROC: 0.5857312565899857
+Accuracy: 0.4651128804659259
+FPR: 0.35903086029442455
+TPR: 0.4651128804659259
+F-measure: 0.48464212442632626
+Precision: 0.6709603205252765
+Recall: 0.4651128804659259
+Runtime - lr - 5921.031257867813
++------------------------------+------+----------+
+|                   probability|output|prediction|
++------------------------------+------+----------+
+|[0.9479785143560402,0.05202...|   0.0|       0.0|
+|[0.9479785143560402,0.05202...|   0.0|       0.0|
+|[0.9479785143560402,0.05202...|   0.0|       0.0|
+|[0.9479785143560402,0.05202...|   0.0|       0.0|
+|[0.9479785143560402,0.05202...|   0.0|       0.0|
+|[0.9479785143560402,0.05202...|   0.0|       0.0|
+|[0.9479785143560402,0.05202...|   0.0|       0.0|
+|[0.9479785143560402,0.05202...|   0.0|       0.0|
+|[0.9479785143560402,0.05202...|   0.0|       0.0|
+|[0.9479785143560402,0.05202...|   0.0|       0.0|
++------------------------------+------+----------+
+only showing top 10 rows
+
+Test Area Under ROC: 0.6205110391100006
+Runtime - rf - 4993.300621509552
++------------------------------+------+----------+
+|                   probability|output|prediction|
++------------------------------+------+----------+
+|[0.9426397365158278,0.05736...|   0.0|       0.0|
+|[0.9419028629460027,0.05809...|   0.0|       0.0|
+|[0.9419028629460027,0.05809...|   0.0|       0.0|
+|[0.9407266314487119,0.05927...|   0.0|       0.0|
+|[0.9407266314487119,0.05927...|   0.0|       0.0|
+|[0.9407266314487119,0.05927...|   0.0|       0.0|
+|[0.9407266314487119,0.05927...|   0.0|       0.0|
+|[0.9407266314487119,0.05927...|   0.0|       0.0|
+|[0.9407266314487119,0.05927...|   0.0|       0.0|
+|[0.9407266314487119,0.05927...|   0.0|       0.0|
++------------------------------+------+----------+
+only showing top 10 rows
+
+Test Area Under ROC: 0.6529670648604486
+Runtime - gb - 7405.279472589493
+19/08/05 03:33:44 INFO breeze.optimize.OWLQN: Step Size: 0.1392
+19/08/05 03:33:44 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.668089 (rel: 0.332) 1.06142
+19/08/05 03:35:42 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/05 03:35:42 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.646841 (rel: 0.0318) 0.569005
+19/08/05 03:37:40 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/05 03:37:40 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.627579 (rel: 0.0298) 0.469983
+19/08/05 03:39:39 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/05 03:39:39 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.601420 (rel: 0.0417) 0.124621
+19/08/05 03:41:38 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/05 03:41:38 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.599624 (rel: 0.00299) 0.123902
+19/08/05 03:43:36 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/05 03:43:36 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.587891 (rel: 0.0196) 0.113451
+19/08/05 03:45:35 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/05 03:45:35 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.574028 (rel: 0.0236) 0.206287
+19/08/05 03:47:33 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/05 03:47:33 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.557608 (rel: 0.0286) 0.290782
+19/08/05 03:50:39 INFO breeze.optimize.OWLQN: Step Size: 0.2500
+19/08/05 03:50:39 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.555168 (rel: 0.00438) 0.389775
+19/08/05 03:52:36 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/05 03:52:36 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.548454 (rel: 0.0121) 0.505881
+19/08/05 03:54:34 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/05 03:54:34 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.540225 (rel: 0.0150) 0.297607
+19/08/05 03:56:32 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/05 03:56:32 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.535134 (rel: 0.00942) 0.304890
+19/08/05 03:58:30 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/05 03:58:30 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.529330 (rel: 0.0108) 0.258292
+19/08/05 04:00:28 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/05 04:00:28 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.519110 (rel: 0.0193) 0.332612
+19/08/05 04:05:25 INFO breeze.optimize.OWLQN: Step Size: 0.06250
+19/08/05 04:05:25 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.517831 (rel: 0.00246) 0.392976
+19/08/05 04:09:21 INFO breeze.optimize.OWLQN: Step Size: 0.1250
+19/08/05 04:09:21 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.517016 (rel: 0.00157) 0.498990
+19/08/05 04:11:19 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/05 04:11:19 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.515918 (rel: 0.00212) 0.327857
+19/08/05 04:15:15 INFO breeze.optimize.OWLQN: Step Size: 0.1250
+19/08/05 04:15:15 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.515686 (rel: 0.000450) 0.348893
+19/08/05 04:18:13 INFO breeze.optimize.OWLQN: Step Size: 0.2500
+19/08/05 04:18:13 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.515236 (rel: 0.000872) 0.262507
+19/08/05 04:20:11 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/05 04:20:11 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.515043 (rel: 0.000376) 0.305197
+19/08/05 04:22:09 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/05 04:22:09 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.514448 (rel: 0.00115) 0.245830
+19/08/05 04:24:08 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/05 04:24:08 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.513869 (rel: 0.00112) 0.311846
+19/08/05 04:27:07 INFO breeze.optimize.OWLQN: Step Size: 0.2500
+19/08/05 04:27:07 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.513080 (rel: 0.00154) 0.337499
+19/08/05 04:29:05 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/05 04:29:05 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.512493 (rel: 0.00114) 0.541889
+19/08/05 04:31:04 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/05 04:31:04 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.512115 (rel: 0.000738) 0.359689
+19/08/05 04:33:03 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/05 04:33:03 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.511853 (rel: 0.000513) 0.232148
+19/08/05 04:35:02 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/05 04:35:02 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.511679 (rel: 0.000338) 0.219644
+19/08/05 04:37:01 INFO breeze.optimize.OWLQN: Step Size: 0.5000
+19/08/05 04:37:01 INFO breeze.optimize.OWLQN: Val and Grad Norm: 0.511097 (rel: 0.00114) 0.547029
+19/08/05 04:39:01 INFO breeze.optimize.OWLQN: Converged because max iterations reached
+Test Area Under ROC: 0.5563562601488108
+Runtime - lsvc4158.405479669571
+19/08/05 04:39:02 INFO org.spark_project.jetty.server.AbstractConnector: Stopped Spark@6f5c55d5{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
